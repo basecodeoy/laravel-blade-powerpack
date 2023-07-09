@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-blade-powerpack",
+    "homepage": "https://github.com/faustbrian/laravel-blade-powerpack",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
