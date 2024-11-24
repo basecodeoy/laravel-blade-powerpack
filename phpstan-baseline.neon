@@ -1,0 +1,26 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$string of function mb_strtolower expects string, array\\<int, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/View/Components/BunnyFonts.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/View/Components/BunnyFonts.php
+
+		-
+			message: "#^Anonymous function should return string but returns array\\<int, string\\>\\|string\\.$#"
+			count: 1
+			path: src/View/Components/GoogleFonts.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, array\\<int, string\\>\\|string given\\.$#"
+			count: 1
+			path: src/View/Components/GoogleFonts.php
+
+		-
+			message: "#^Parameter \\#3 \\$subject of function str_replace expects array\\|string, array\\|string\\|null given\\.$#"
+			count: 1
+			path: src/View/Components/GoogleFonts.php
