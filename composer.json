@@ -1,0 +1,63 @@
+{
+    "name": "basecodeoy/blade",
+    "description": "A collection of opinionated components and directives for Laravel Blade.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "blade"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/blade",
+    "support": {
+        "issues": "https://github.com/basecodeoy/blade/issues",
+        "source": "https://github.com/basecodeoy/blade",
+        "security": "https://github.com/basecodeoy/blade/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*",
+        "basecodeoy/crate": "^1.0.0",
+        "illuminate/contracts": "^11.0"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\BladePowerPack\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\BladePowerPack\\ServiceProvider"
+            ]
+        }
+    }
+}
